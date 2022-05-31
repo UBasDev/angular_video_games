@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*,*::after,*::before{
+    box-sizing: border-box
+}
+body{
+    font-family:Roboto, "Helvetica Neue", sans-serif;
+    background-color: #151515;
+    padding-top: 60px;
+    height: 100%    
+}
+body *{
+    font-family:Roboto, "Helvetica Neue", sans-serif;
+    margin:0;
+    padding:0    
+}
+.test1{
+    @apply w-full mx-auto my-5;
+}
